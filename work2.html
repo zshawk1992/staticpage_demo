@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // window.onload = function(){
+        //     document.getElementById('btn').onclick = function(){
+        //         const message = document.getElementById('content').value
+        //         document.getElementById('show').innerHTML = message
+        //     }
+        // }
+        function showmessage() {
+            const message = document.getElementById('content').value
+            document.getElementById('show').innerHTML = message
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <form action="#"> -->
+    <input type="text" id="content">
+    <button id="btn" onclick="showmessage()">显示</button>
+    <!-- </form> -->
+    <div id="show"></div>
+</body>
+
+</html>
